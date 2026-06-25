@@ -115,9 +115,18 @@
   .pill{ position:fixed; top:16px; left:18px; z-index:20; color:var(--dim); font-size:13px; letter-spacing:.04em; }
   .pill b{ color:var(--brass); }
   @media (max-width:760px){
-    .slide{ flex-direction:column; gap:22px; padding:9vh 6vw 16vh; }
-    .col-prompt{ flex:none; max-width:none; }
-    .win{ width:min(560px,90vw); }
+    .pill, .fs{ display:none; }                 /* declutter the top on small screens */
+    .aud{ top:10px; padding:3px; }
+    .aud button{ font-size:12px; padding:6px 11px; }
+    .slide{ display:block; overflow-y:auto; -webkit-overflow-scrolling:touch;
+      padding:64px 20px 108px; }                 /* clear the top toggle + bottom nav */
+    .center{ text-align:center; }
+    .col-prompt{ max-width:none; width:100%; margin-bottom:20px; }
+    .col-result{ display:block; width:100%; }
+    .win{ width:100%; }
+    h1{ font-size:30px; }
+    .step-h{ font-size:26px; }
+    .nav{ background:var(--bg); border-top:1px solid var(--line); padding:12px; gap:12px; }
   }
 </style>
 </head>

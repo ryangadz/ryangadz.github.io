@@ -10,3 +10,7 @@ kitchen system in plain English, with no code.
 Plain static HTML on GitHub Pages. Files I own — host-agnostic and easy to move
 anywhere. Public repo, so only public-safe content lives here (private life stays
 in its own private repo).
+
+**Build rule:** these are public pages — build them **mobile-first** and check a
+narrow viewport before publishing. Fixed top/bottom chrome must reserve space so it
+never overlaps content on a phone.
